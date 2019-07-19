@@ -13,13 +13,6 @@ y=dataset.iloc[:, 1].values
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test =  train_test_split(X, y, test_size = 1/3, random_state=0)
 
-#featuring scaling
-"""from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_train  = sc_X.tranform(X_train)
-X_test = sc_x.transform(x_test)
-sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)"""
 
 #fitting Simple linear regression to the training set 
 from sklearn.linear_model import LinearRegression
